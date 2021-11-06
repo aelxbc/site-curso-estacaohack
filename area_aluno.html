@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- tag responsiva bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
+     <!-- link css bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <!-- link icons bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+
+    <!-- lin bundle bootstrap -->
+    <!-- foi alterado o link CDN do JQuery para a versão completa -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Site curso WebDev</title>
+</head>
+<body>
+    
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <!-- logo -->
+            <img src="https://br.cellep.com/wp-content/themes/cellep/assets/img/logo_branca.svg" alt="cel.lep">
+      
+            <!-- button menu hamburguer -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <!-- itens de navegação -->
+            <div class="collapse navbar-collapse" id="navegacao">
+              <ul class="navbar-nav ml-auto">
+                <!-- (li>a)*3 -->
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="agenda.html">Agenda</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Entidades</a>
+                  <div class="dropdown-menu bg-dark">
+                    <a target="_blank" class="dropdown-item text-white" 
+                    href="http://br.cellep.com/estacaohack"><i class="bi bi-file-earmark-person mr-1"></i>Cellep</a>
+                    <a target="_blank" class="dropdown-item text-white" 
+                    href="http://estacaohack.fb.com"><i class="bi bi-facebook mr-1"></i>Estação Hack</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="area_aluno.html">Área do aluno</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    <main class="container">
+        
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-warning">Área do Aluno</h2>
+                <form id="loginAluno" action="area_aluno.html">
+                    <div class="form-group">
+                        <label for="inputUsuario">Usuário</label>
+                        <input id="inputUsuario" type="text" class="form-control" placeholder="Digite seu usuário" autocomplete="off" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputSenha">Senha</label>
+                        <input id="inputSenha" type="passsword" class="form-control" placeholder="Digite sua senha" autocomplete="off" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">ENTRAR</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-md-12">
+                <a href="#">Esqueci a senha</a>
+                <div class="mt-2" role="alert" id="mensagem"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer bg-dark fixed-bottom ">
+        <div class="container text-center pt-2">
+            <span class="text-white font-italic">
+                Todos os direitos reservados 
+            </span>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

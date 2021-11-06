@@ -1,0 +1,47 @@
+/* redefinir o padrao de cores do nav do bootstrap */
+
+.active {
+    background-color: #007BFF;
+}
+
+.nav-link, dropdown-item {
+    color: white !important;
+}
+
+.nav-link:hover:not(.active), .dropdown-item:hover {
+    background-color: #7952B3;
+    color: white !important;
+}
+
+/* Criar a classe bg-imagem */
+.bg-imagem {
+    height: 48vw;
+    background-image: url("https://cdn.pixabay.com/photo/2015/01/08/18/24/children-593313_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-imagem p {
+    font-size: 4vw;
+    text-shadow: 4px 4px 8px black;
+}
+
+/* seletor tag footer */
+footer {
+    height: 50px;
+}
+
+/* seletor ID agenda */
+#agenda th {
+    font-size: 1.5vw;
+}
+
+#agenda td {
+    height: 100px;
+    /* 100% / 7 colunas */
+    width: 14.29%;
+}
+
+#agenda td.bg-info {
+    color: white;
+}
